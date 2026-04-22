@@ -1,0 +1,750 @@
+body, html {
+    font-family: "Archivo", sans-serif;
+}
+
+:root {
+    --main-ev-color: #EF7D00;
+    --main-bg-color: #1D1D1B;
+    --gray-color: #9F9F9F;
+}
+
+.orange {
+    color: var(--main-ev-color);
+}
+
+.nav-link {
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--main-ev-color);
+    font-weight: 500;
+    border-bottom: #EFEF01 2px solid;
+}
+
+.bg-black {
+    --bs-bg-opacity: 1;
+    background-color: #000000 !important;
+}
+
+.btn-red {
+    color: #13110C;
+    border-color: black;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #444444;
+    border-color: black;
+}
+
+.hero-image {
+    background-image: url(../img/banner-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 160px 0 80px 0;
+    min-height: 500px;
+}
+
+.hero-days {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+
+}
+
+.hero-month {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+
+}
+
+.border-l {
+    border-left: none;
+}
+
+.hero-data {
+    padding: 14px 20px;
+}
+
+.hero-lugar {
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+}
+
+#infographic {
+    padding: 60px 0;
+    background-color: #F5F5F5;
+}
+
+.info-icon {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.info-graph-title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 23px;
+    letter-spacing: 0;
+    color: var(--main-ev-color);
+}
+
+.info-graph-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    color: #13110C;
+    margin-top: 4px;
+}
+
+#intro {
+    padding: 20px 0 70px 0;
+    background-color: white;
+    color: black;
+}
+
+H1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    margin: 12px 0 20px 0;
+}
+
+.content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: justify;
+}
+
+#registro {
+    padding: 70px 0;
+    background-color: #141414;
+    color: white;
+}
+
+#registro .color-red {
+    color: var(--main-ev-color);
+}
+
+.requisito {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    background-color: var(--main-bg-color);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.program-badge {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 50%;
+    background: #b3b3b3;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: lowercase;
+}
+
+.code {
+    color: var(--main-ev-color);
+    font-weight: bold;
+}
+
+.curso {
+    margin: 8px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.curso:hover {
+    background-color: #FFFFFF;
+}
+
+.title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.professor {
+    font-size: 18px;
+    color: #878787;
+    margin-top: 4px;
+}
+
+.curso:hover .title {
+    color: var(--main-ev-color);
+}
+
+.curso:hover .professor {
+    color: #000000;
+}
+
+.curso:hover .schedule-circle {
+    background-color: #FFFFFF !important;
+}
+
+.curso:hover .code {
+    color: var(--main-ev-color);
+
+}
+
+.modal-title {
+    color: var(--main-ev-color);
+}
+
+.modal-body {
+    padding: 28px;
+    text-align: justify;
+}
+
+#talks {
+    padding: 30px 30px;
+    background-color: #EFEFEF;
+}
+
+#cursos-platicas {
+    padding: 70px 0;
+    background-color: #EFEFEF;
+}
+
+#cursos-platicas h1 {
+    color: black;
+}
+
+#schedule {
+    padding: 70px 0;
+    background-color: #000000;
+}
+
+#schedule h1 {
+    color: #FFFFFF;
+}
+
+.schedule-time {
+    padding: 4px 16px;
+    color: #878787;
+    min-width: 140px;
+}
+
+.schedule-event {
+    border-bottom: 1px solid #ffa0a0;
+    padding: 16px 0;
+}
+
+.schedule-talk {
+    padding: 4px 16px;
+}
+
+.schedule-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 8px;
+    color: black;
+}
+
+.schedule-professor {
+    color: #878787;
+}
+
+.schedule-talk:hover .schedule-time {
+    color: #01ECFF;
+}
+
+.schedule-talk:hover .schedule-title {
+    color: var(--main-ev-color);
+}
+
+.schedule-talk:hover .schedule-professor {
+    color: black;
+}
+
+#program {
+    padding: 70px 0;
+    background-color: #F4F4F4;
+    color: #1D1D1B;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border-color: black;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    isolation: isolate;
+    border-color:  black;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #FAE905;
+}
+
+.nav-tabs .nav-link {
+    padding: 12px 48px;
+}
+
+#comites {
+    padding: 70px 0;
+    background-color: #FFFFFF;
+}
+
+li {
+    color: #343434;
+}
+
+#registro li {
+    color: #d9d9d9;
+}
+
+.dudas {
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--main-ev-color);
+}
+
+.lista-organizador {
+    font-size: 20px;
+    gap: 0;
+}
+
+.organizador {
+    padding: 0 14px;
+    color: var(--main-ev-color);
+    font-weight: bold;
+ }
+
+.organizador-uni {
+    color: #333333;
+}
+
+.contacto-container {
+    padding: 20px 0 0 0;
+    background-color: #FFFFFF;
+}
+
+.contacto-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #13110C;
+    text-align: center;
+}
+
+.contacto-content {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+#contacto {
+    padding: 40px 0;
+    background-color: #FFFFFF;
+}
+
+#footer {
+    padding: 40px 0;
+    background-color: #262626;
+    color: white;
+}
+
+.footer-title {
+    color: white;
+}
+
+.cyan {
+    color: #01ECFF;
+}
+
+.cyan-dark {
+    color: #096B68;
+}
+
+.white {
+    color: white;
+}
+
+.sponsor {
+    margin-bottom: 4rem;
+}
+
+.copyright {
+    font-size: 14px;
+    padding: 2px;
+}
+
+.gallery-item {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery-top {
+    height: 350px;
+}
+
+.gallery-bottom {
+    height: 420px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.program-title {
+    font-size: 2.4rem;
+}
+
+.program-item {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.9rem;
+    transition: background 0.18s, box-shadow 0.18s;
+}
+
+.program-item:hover {
+    background: #1f28ff;
+    box-shadow: 0 2px 14px rgba(31, 40, 255, 0.18);
+}
+
+.program-item:hover .program-badge {
+    background: #fff;
+    color: #1f28ff;
+}
+
+.program-item:hover .program-text h5 {
+    color: #fff;
+}
+
+.program-item:hover .program-text p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.program-badge {
+    margin-right: .8rem;
+}
+
+.program-item.active {
+    min-width: 100%;
+    border-radius: 1.2rem;
+}
+
+.schedule-section {
+    background: #f3f3f3;
+}
+
+.schedule-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #000;
+}
+
+/* Pills */
+.schedule-pills {
+    gap: 0.75rem;
+}
+
+.schedule-pills .nav-link {
+    border: 1.5px solid #9c9c9c;
+    border-radius: 999px;
+    background: transparent;
+    color: #8b8b8b;
+    padding: 0.75rem 1.6rem;
+    line-height: 1;
+    min-width: 110px;
+    text-align: center;
+}
+
+.schedule-pills .nav-link.active,
+.schedule-pills .show > .nav-link {
+    background: #1f2cff;
+    border-color: #1f2cff;
+    color: #fff;
+}
+
+.download-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    padding: 0.8rem 1.6rem;
+    border-radius: 999px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 1.5px solid #000;
+}
+
+/* Timeline */
+.schedule-list {
+    --time-col: 122px;
+    --connector-col: 64px;
+    position: relative;
+    max-width: 980px;
+}
+
+/* One vertical line for the whole timeline */
+.schedule-list::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: calc(var(--time-col) + (var(--connector-col) / 2));
+    width: 2px;
+    background: #2337ff;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.schedule-row {
+    display: grid;
+    grid-template-columns: var(--time-col) var(--connector-col) 1fr;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.schedule-time {
+    text-align: right;
+    padding-right: 1.6rem;
+    font-weight: 800;
+    font-size: 1rem;
+    color: #111;
+}
+
+.schedule-connector {
+    position: relative;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+/* Short horizontal line centered inside connector column */
+.schedule-line {
+    position: relative;
+    width: 44px;
+    height: 2px;
+    background: #2337ff;
+}
+
+.schedule-line::before,
+.schedule-line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #2337ff;
+    transform: translateY(-50%);
+}
+
+.schedule-line::before {
+    left: -5px;
+}
+
+.schedule-line::after {
+    right: -5px;
+}
+
+.schedule-content {
+    font-size: 1.05rem;
+    line-height: 1.1;
+    color: #111;
+}
+
+.schedule-content strong {
+    font-weight: 800;
+}
+
+@media (min-width: 768px) {
+
+    .navbar-nav {
+        min-height: 100px;
+    }
+
+    .custom-navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: transparent !important;
+        z-index: 10;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .custom-navbar .nav-link,
+    .custom-navbar .navbar-brand {
+        color: white !important;
+    }
+
+    .custom-navbar .nav-link:hover {
+        color: #f8d44c !important;
+        font-weight: bold;
+    }
+
+    .navbar-toggler {
+        border-color: rgba(255,255,255,0.5);
+    }
+
+    .navbar-toggler-icon {
+        filter: brightness(0) invert(1);
+    }
+
+    .hero-image {
+        background-image: url(../img/banner-header.png);
+        background-repeat: no-repeat;
+        background-color: #f5f5f5;
+        background-position: top center;
+        padding: 80px 0 40px 0;
+        min-height: clamp(320px, 70vh, 900px);
+        width: 100%;
+
+    }
+
+    .hero-days {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 55px;
+        letter-spacing: 0;
+        text-align: center;
+    }
+
+    .hero-month {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 37px;
+        letter-spacing: 0;
+        text-align: center;
+    }
+
+    .border-l {
+        border-left: none;
+    }
+
+
+    .hero-data {
+        padding: 0 20px;
+    }
+
+    .hero-lugar {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 27px;
+        letter-spacing: 0;
+        text-align: left;
+
+    }
+
+    .border-l {
+        border-left: 4px solid #01ECFF;
+    }
+
+    .content {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0;
+    }
+
+    .gallery-top, .gallery-bottom {
+        height: 240px;
+    }
+
+    .program-section {
+        background: #f3f3f3;
+    }
+
+    .program-title {
+        font-size: 3rem;
+        font-weight: 800;
+        color: #000;
+    }
+
+    .program-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .program-item {
+        gap: 0.9rem;
+    }
+
+    .program-text h5 {
+        font-size: 1.05rem;
+        font-weight: 800;
+        line-height: 1.05;
+        color: #111;
+    }
+
+    .program-text p {
+        font-size: 0.95rem;
+        color: #7a7a7a;
+        line-height: 1.1;
+    }
+
+    /* Active item */
+    .program-item.active {
+        background: #1f28ff;
+        color: #fff;
+        border-radius: 999px;
+        padding: 0.55rem 1.1rem;
+        width: fit-content;
+        min-width: 320px;
+    }
+
+    .program-item.active .program-badge {
+        background: transparent;
+        color: #fff;
+    }
+
+    .program-item.active .program-text h5,
+    .program-item.active .program-text p {
+        color: #fff;
+    }
+
+    .schedule-title {
+        font-size: 2.5rem;
+    }
+
+    .schedule-row {
+        grid-template-columns: 110px 55px 1fr;
+    }
+
+    .schedule-row:not(:last-child)::after {
+        left: 137px;
+    }
+
+}
