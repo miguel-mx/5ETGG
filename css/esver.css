@@ -423,20 +423,19 @@ li {
 
 .program-item {
     margin-bottom: 1rem;
-    cursor: pointer;
     padding: 0.6rem 0.8rem;
     border-radius: 0.9rem;
     transition: background 0.18s, box-shadow 0.18s;
 }
 
 .program-item:hover {
-    background: #1f28ff;
-    box-shadow: 0 2px 14px rgba(31, 40, 255, 0.18);
+    background: var(--main-ev-color);
+    box-shadow: 0 2px 14px rgba(239, 125, 0, 0.18);
 }
 
 .program-item:hover .program-badge {
     background: #fff;
-    color: #1f28ff;
+    color: var(--main-ev-color);
 }
 
 .program-item:hover .program-text h5 {
@@ -445,6 +444,10 @@ li {
 
 .program-item:hover .program-text p {
     color: rgba(255, 255, 255, 0.8);
+}
+
+.program-item[data-talk-id] {
+    cursor: pointer;
 }
 
 .program-badge {
@@ -484,8 +487,8 @@ li {
 
 .schedule-pills .nav-link.active,
 .schedule-pills .show > .nav-link {
-    background: #1f2cff;
-    border-color: #1f2cff;
+    background: var(--main-ev-color);
+    border-color: var(--main-ev-color);
     color: #fff;
 }
 
@@ -518,7 +521,7 @@ li {
     bottom: 15px;
     left: calc(var(--time-col) + (var(--connector-col) / 2));
     width: 2px;
-    background: #2337ff;
+    background: var(--main-ev-color);
     transform: translateX(-50%);
     z-index: 0;
 }
@@ -554,7 +557,7 @@ li {
     position: relative;
     width: 44px;
     height: 2px;
-    background: #2337ff;
+    background: var(--main-ev-color);
 }
 
 .schedule-line::before,
@@ -565,7 +568,7 @@ li {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background: #2337ff;
+    background: var(--main-ev-color);
     transform: translateY(-50%);
 }
 
@@ -717,7 +720,7 @@ li {
 
     /* Active item */
     .program-item.active {
-        background: #1f28ff;
+        background: var(--main-ev-color);
         color: #fff;
         border-radius: 999px;
         padding: 0.55rem 1.1rem;
